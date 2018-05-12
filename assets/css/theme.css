@@ -12,6 +12,10 @@ body {
   font-size: 14px;
 }
 
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
 section{
   margin-bottom: 15px;
 }
@@ -21,6 +25,27 @@ section{
   font-weight: 400;
 }
 
+.md-form input[type=date]:focus:not([readonly]), .md-form input[type=datetime-local]:focus:not([readonly]), .md-form input[type=email]:focus:not([readonly]), .md-form input[type=number]:focus:not([readonly]), .md-form input[type=password]:focus:not([readonly]), .md-form input[type=search-md]:focus:not([readonly]), .md-form input[type=search]:focus:not([readonly]), .md-form input[type=tel]:focus:not([readonly]), .md-form input[type=text]:focus:not([readonly]), .md-form input[type=time]:focus:not([readonly]), .md-form input[type=url]:focus:not([readonly]), .md-form textarea.md-textarea:focus:not([readonly]) {
+  -webkit-box-shadow: 0 1px 0 0 #bd2130;
+  box-shadow: 0 1px 0 0 #bd2130;
+  border-bottom: 1px solid #bd2130;
+}
+
+.md-form input[type=date], .md-form input[type=datetime-local], .md-form input[type=email], .md-form input[type=number], .md-form input[type=password], .md-form input[type=search-md], .md-form input[type=search], .md-form input[type=tel], .md-form input[type=text], .md-form input[type=time], .md-form input[type=url], .md-form textarea.md-textarea {
+  border-bottom: 2px solid #bd2130;
+}
+
+.md-form input[type=date]:focus:not([readonly])+label, .md-form input[type=datetime-local]:focus:not([readonly])+label, .md-form input[type=email]:focus:not([readonly])+label, .md-form input[type=number]:focus:not([readonly])+label, .md-form input[type=password]:focus:not([readonly])+label, .md-form input[type=search-md]:focus:not([readonly])+label, .md-form input[type=search]:focus:not([readonly])+label, .md-form input[type=tel]:focus:not([readonly])+label, .md-form input[type=text]:focus:not([readonly])+label, .md-form input[type=time]:focus:not([readonly])+label, .md-form input[type=url]:focus:not([readonly])+label, .md-form textarea.md-textarea:focus:not([readonly])+label {
+  color: #000000;
+}
+
+.input-mask{
+  color: #cccccc !important;
+}
+
+#payment > div > div > div {
+  padding: 0.40rem;}
+
 .card {
   height: 100%;
   border: none;
@@ -28,7 +53,7 @@ section{
   .card .card-text{
     margin-top: 5px;
     margin-bottom: 5px;}
-  .card .ml-auto:after {
+  .card .card-text .ml-auto:after {
     display: inline-block;
     font-style: normal;
     font-variant: normal;
@@ -50,6 +75,11 @@ section{
 
 .border_blue{
   border: #007bff solid 3px;
+}
+
+.big_num{
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 
 @media (min-width: 992px) {

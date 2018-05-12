@@ -9,6 +9,7 @@
   <meta name="author" content="Wilton fot FENG">
   <title>Desenvolvedor front-end</title>
   <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/MDB/css/mdb.css" rel="stylesheet">
   <link href="assets/css/theme.css" rel="stylesheet">
   <link href="assets/font-awesome/css/fontawesome-all.min.css" rel="stylesheet">
 </head>
@@ -206,9 +207,48 @@
     <div class="row">
       <div class="col-lg-4 col-md-12 mb-4">
         <div class="card">
-          <div class="card-body">
-            <h4 class="card-title">MEUS DADOS</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
+          <div class="card_pay card-body">
+            <h4 class="card-title">
+              <div class="d-flex">
+                <div class="mt-3">
+                  MEUS DADOS
+                </div>
+                <div class="ml-auto big_num ">
+                  1
+                </div>
+              </div>
+            </h4>
+            <div class="row">
+              <form class="col-md-12">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="md-form">
+                        <input type="text" id="form1" class="form-control" value="Carlos Eduardo">
+                        <label for="form1" >Nome</label>
+                    </div>
+                    <div class="md-form">
+                      <input type="text" id="form2" class="form-control input-mask" value="114.604.194-74">
+                      <label for="form2" >CPF</label>
+                    </div>
+                    <div class="md-form">
+                      <input type="text" id="form3" class="form-control" value="carloseduardo@gmail.com">
+                      <label for="form3" >E-mail</label>
+                    </div>
+                    <div class="md-form">
+                      <input type="password" id="form4" class="form-control" value="123456">
+                      <label for="form4" >Senha</label>
+                    </div>
+                    <div class="md-form">
+                      <small><span class="text-danger">Atenção: </span> O CPF não poderá ser mudado posteriormente, atenção aos
+                      seus dados, eles são muito importantes par a identificação e validação da sua assinatura.</small>
+                    </div>
+                    <div class="md-form">
+                      <button style="font-size: 0.7rem;" type="button" class="btn btn-outline-danger">Cadastre aqui o seu endereço para receber seu cartão ingresso</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -216,7 +256,9 @@
       <div class="col-lg-4 col-md-12 mb-4">
         <div class="card">
           <div class="card-body">
-            <h4 class="card-title">PAGAMENTO</h4>
+            <h4 class="card-title">
+              PAGAMENTO
+            </h4>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
           </div>
         </div>
@@ -241,6 +283,7 @@
 
 <script src="assets/jquery/jquery.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 </body>
 
 </html>
