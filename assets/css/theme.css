@@ -16,12 +16,47 @@ body {
   font-weight: 400;
 }
 
+a{
+  text-decoration: underline;
+  color: #0d0d0d;
+  font-weight: 700;
+}
+
+a:hover{
+  text-decoration: underline;
+  color: #a0191d;
+  font-weight: 700;
+}
+
+.text-danger{
+  color: #a0191d !important;
+}
+
+.btn-danger{
+   background: #a0191d !important;
+}
+
+.btn-outline-danger{
+  color: #a0191d !important;
+}
+
+.btn-outline-danger:hover{
+  color: #ffffff !important;
+  background: #a0191d !important;
+}
+
+
 section{
   margin-bottom: 15px;
 }
 
 .small, small {
   font-size: 65%;
+  font-weight: 400;
+}
+
+small.normal{
+  font-size: 80%;
   font-weight: 400;
 }
 
@@ -32,7 +67,7 @@ section{
 select{
   border: none !important;
   border-radius: 0 !important;
-  border-bottom: 2px red solid !important;
+  border-bottom: 2px  #a0191d solid !important;
 }
 
 #payment > div > div > div {
@@ -55,14 +90,15 @@ select{
   .card .card-custom-img img{
     max-width: 125px;}
   .card .card-custom-img .border_bot_red{
-    border-bottom: #bd2130 solid 2px;
+    border-bottom: #a0191d solid 2px;
+    margin-bottom: 5px;
   }
   .card .card-custom-img-min img{
     max-width: 60px;
   }
 
 .border_bot_red{
-  border-bottom: #bd2130 solid 2px;
+  border-bottom: #a0191d solid 2px;
 }
 
 .border_blue{
@@ -80,7 +116,7 @@ select{
   font-variant: normal;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-  font-family: "Font Awesome 5 Brands"; 
+  font-family: "Font Awesome 5 Brands";
   content: "\f058";
 }
 
@@ -92,6 +128,36 @@ select{
   color: #7B7B7B;
   cursor:pointer;
   width: 0;
+}
+
+.form-control.quadrado{
+  border: solid #a0191d 3px;
+}
+.quadrado{
+  border: solid #a0191d 3px;
+}
+
+
+label input {
+  display: none; /* hide the default checkbox */
+}
+
+/* style the artificial checkbox */
+label span {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  position: relative;
+  border: solid #a0191d 2px;
+}
+
+/* style its checked state..with a ticked icon */
+[type=checkbox]:checked + span:before {
+  content: '\2714';
+  position: absolute;
+  color: #a0191d;
+  top: -2px;
+  left: 0;
 }
 
 @media (min-width: 992px) {
